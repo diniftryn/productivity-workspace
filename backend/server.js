@@ -36,7 +36,7 @@ mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     // listen for requests
-    app.listen(process.env.PORT, () => {
+    app.listen("https://productivity-workspace.vercel.app", () => {
       console.log("connected to db & listening on port", process.env.PORT);
     });
   })
