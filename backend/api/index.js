@@ -27,8 +27,8 @@ app.use((req, res, next) => {
 });
 
 // routes
-// app.use("/api/tasks", taskRoutes);
-// app.use("/api/user", userRoutes);
+app.use("/api/tasks", taskRoutes);
+app.use("/api/user", userRoutes);
 
 // connect to db
 const port = process.env.PORT || 3000;
