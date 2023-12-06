@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://productivity-workspace-frontend.vercel.app"]
+    origin: ["https://productivity-workspace.vercel.app"]
   })
 );
 
