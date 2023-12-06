@@ -10,7 +10,7 @@ const TaskList = () => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch("/api/tasks", {
+      const response = await fetch("https://productivity-workspace-backend/api/tasks", {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       const json = await response.json();

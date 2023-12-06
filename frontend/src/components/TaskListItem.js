@@ -29,7 +29,7 @@ const TaskListItem = ({ dragged, dragging, task, ...rest }) => {
   const handleDelete = async () => {
     if (!user) return;
 
-    const response = await fetch("/api/tasks/" + task._id, {
+    const response = await fetch("https://productivity-workspace-backend/api/tasks/" + task._id, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${user.token}` }
     });
@@ -48,11 +48,11 @@ const TaskListItem = ({ dragged, dragging, task, ...rest }) => {
     if (!user) return;
 
     let updatedTask;
-    if (type == "toggleDone") {
+    if (type === "toggleDone") {
       updatedTask = { ...task, isDone: !task.isDone };
-    } else if (type == "toggleEdit") {
+    } else if (type === "toggleEdit") {
       updatedTask = { ...task, isEdit: !task.isEdit };
-    } else if (type == "save") {
+    } else if (type === "save") {
       updatedTask = { ...task, isEdit: !task.isEdit, description: editTask.description };
     }
 

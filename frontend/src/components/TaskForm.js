@@ -22,7 +22,7 @@ const TaskForm = () => {
       return;
     }
 
-    const response = await fetch("/api/tasks", {
+    const response = await fetch("https://productivity-workspace-backend/api/tasks", {
       method: "POST",
       body: JSON.stringify(task),
       headers: {
