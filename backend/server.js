@@ -13,7 +13,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://productivity-workspace.vercel.app"]
+    origin: ["https://productivity-workspace.vercel.app"],
+    methods: ["GET", "POST", "PATCH", "DELETE"],
+    credentials: true
   })
 );
 
