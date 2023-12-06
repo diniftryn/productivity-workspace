@@ -1,0 +1,53 @@
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.App-container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  /* background: rgb(255, 236, 189); */
+  background-image: radial-gradient(circle, rgba(255, 236, 189, 1) 0%, rgba(185, 249, 221, 1) 25%, rgba(246, 224, 255, 1) 100%);
+  padding: 0px 12px;
+  max-width: 800px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  /* font-family: "Poppins"; */
+  cursor: pointer;
+  font-size: 1em;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  /* display: block; */
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}

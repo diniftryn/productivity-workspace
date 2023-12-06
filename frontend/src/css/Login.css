@@ -1,0 +1,22 @@
+label,
+input.login {
+  display: block;
+}
+input.login {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
