@@ -1,8 +1,8 @@
 require("dotenv").config();
 
 const express = require("express");
-const taskRoutes = require("../routes/tasks");
-const userRoutes = require("../routes/users");
+const taskRoutes = require("./routes/tasks");
+const userRoutes = require("./routes/users");
 
 const mongoose = require("mongoose");
 
@@ -14,8 +14,7 @@ const app = express();
 app.use(
   cors({
     origin: ["https://productivity-workspace.vercel.app"],
-    methods: ["GET", "POST", "PATCH", "DELETE"],
-    credentials: true
+    methods: ["GET", "POST", "PATCH", "DELETE"]
   })
 );
 
