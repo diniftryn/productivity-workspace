@@ -1,8 +1,8 @@
 require("dotenv").config();
 
 const express = require("express");
-const taskRoutes = require("./routes/tasks");
-const userRoutes = require("./routes/users");
+const taskRoutes = require("../routes/tasks");
+const userRoutes = require("../routes/users");
 
 const mongoose = require("mongoose");
 
@@ -26,10 +26,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("Express JS on Vercel");
-});
-
 // routes
 app.use("/api/tasks", taskRoutes);
 app.use("/api/user", userRoutes);
@@ -47,3 +43,5 @@ mongoose
   .catch(error => {
     console.log(error);
   });
+
+module.exports = app;
