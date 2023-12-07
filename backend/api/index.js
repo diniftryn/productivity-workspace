@@ -30,6 +30,10 @@ app.use((req, res, next) => {
 app.use("/api/tasks", taskRoutes);
 app.use("/api/user", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("App is running.");
+});
+
 // connect to db
 const port = process.env.PORT || 3000;
 mongoose
