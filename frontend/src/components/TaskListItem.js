@@ -56,7 +56,7 @@ const TaskListItem = ({ dragged, dragging, task, ...rest }) => {
       updatedTask = { ...task, isEdit: !task.isEdit, description: editTask.description };
     }
 
-    const response = await fetch("http://localhost:4000/api/tasks/" + task._id, {
+    const response = await fetch("https://productivity-workspace-d73580ee4fe9.herokuapp.com/api/tasks/" + task._id, {
       method: "PATCH",
       body: JSON.stringify(updatedTask),
       headers: {
