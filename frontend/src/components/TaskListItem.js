@@ -29,7 +29,7 @@ const TaskListItem = ({ dragged, dragging, task, ...rest }) => {
   const handleDelete = async () => {
     if (!user) return;
 
-    const response = await fetch("https://productivity-workspace-backend/api/tasks/" + task._id, {
+    const response = await fetch("https://productivity-workspace-d73580ee4fe9.herokuapp.com/api/tasks/" + task._id, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${user.token}` }
     });
