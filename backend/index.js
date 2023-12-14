@@ -1,8 +1,8 @@
 require("dotenv").config();
 
 const express = require("express");
-const taskRoutes = require("../routes/tasks");
-const userRoutes = require("../routes/users");
+const taskRoutes = require("./routes/tasks");
+const userRoutes = require("./routes/users");
 
 const mongoose = require("mongoose");
 
